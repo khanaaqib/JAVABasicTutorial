@@ -1,14 +1,22 @@
 class Student{
-    private int age =10;
+    private int age;
     private int rollno;
     private String name;
 
-    public int getRollno(){
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getRollno() {
         return rollno;
     }
 
-    public void setRollno(int rollno){
-        this.rollno=  rollno;
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
     }
 
     public String getName() {
@@ -25,7 +33,6 @@ public class EncapsulationConcept {
         Student student= new Student();
         student.setName("java tutorial");
         student.setRollno(101);
-        System.out.println("name is: "+ student.getName());
         System.out.println("roll no is: "+ student.getRollno());
 
     }
